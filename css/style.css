@@ -1,48 +1,54 @@
 @import url(variables.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: var(--colorBody);
-    
+
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 7fr 5fr;
     align-items: center;
-   
+
 }
-.container .logo a{
+
+.container .logo a {
     color: var(--colorFirst);
     margin: 100px;
     font-size: 50px;
-   
+
 }
 
-.container .menu ul{
+.container .menu ul {
     color: var(--colorSecond);
     list-style: none;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    justify-items: center ;
-    
+    justify-items: center;
+
 }
-.container .menu ul li{
+
+.container .menu ul li {
     padding: 5px 10px;
     margin: 10px;
     border: 1px solid transparent;
     transition: border-color 0.3s;
     border-radius: 15px;
-    
+
 }
-.container .menu ul li:hover{
+
+.container .menu ul li:hover {
     border-color: green;
-    
+
 }
-.content{
+
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -51,16 +57,19 @@ body{
     height: 70vh;
 
 }
-.content .textos a{
-    font-size:100px;
+
+.content .textos a {
+    font-size: 100px;
     color: var(--colorFirst);
 }
-.content .textos p{
+
+.content .textos p {
     font-size: 30px;
     margin: 0;
     color: var(--colorSecond);
 }
-button{
+
+button {
     background-color: var(--colorFirst);
     padding: 10px;
     color: var(--colorSecond);
@@ -68,54 +77,63 @@ button{
     margin-top: 30px;
     border: none;
 }
+
 img {
     height: 80%;
     width: 80%;
 
 }
 
-.content .textos2 a{
+.content .textos2 a {
     color: var(--colorFirst);
     font-size: 30px;
 
 }
-.content .textos2 p{
+
+.content .textos2 p {
     color: var(--colorSecond);
 
 }
-.content .textos2 .titulo{
+
+.content .textos2 .titulo {
     font-size: 50px;
 
 }
-.content .textos2 .acerca{
+
+.content .textos2 .acerca {
     font-size: 20px;
     width: 350px;
 }
-.contenedor{
+
+.contenedor {
     display: grid;
     grid-template-rows: 1fr 3fr;
     justify-content: center;
     height: 80vh;
 }
-.titulos{
+
+.titulos {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.titulos a{
+
+.titulos a {
     color: var(--colorFirst);
     margin-top: 40px;
-    font-size:xx-large;
+    font-size: xx-large;
     text-align: center;
 }
-.titulos p{
+
+.titulos p {
     color: var(--colorSecond);
-    font-size:35px;
+    font-size: 35px;
     text-align: center;
 }
-.contenedor .cards{
+
+.contenedor .cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 50px;
     align-items: start;
     justify-content: center;
@@ -123,30 +141,36 @@ img {
     gap: 70px;
 
 }
-.contenedor .cards .card{
+
+.contenedor .cards .card {
     position: relative;
     background-color: var(--colorFifth);
     height: auto;
     width: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-.contenedor .cards .card:hover{
+
+.contenedor .cards .card:hover {
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
 }
-.contenedor .cards .card img{
+
+.contenedor .cards .card img {
     width: 150px;
     height: 150px;
     margin-top: 35px;
 }
-.contenedor .cards .card .nombre{
+
+.contenedor .cards .card .nombre {
     font-size: 20px;
 }
-.contenedor .cards .card .precio{
-   color: var(--colorFirst);
+
+.contenedor .cards .card .precio {
+    color: var(--colorFirst);
 }
+
 .card-icon i {
     position: absolute;
     top: 5px;
@@ -155,15 +179,17 @@ img {
     font-size: 45px;
     background-color: var(--colorFirst);
 }
-.content2{
+
+.content2 {
     display: grid;
     grid-template-rows: 1fr 3fr;
     justify-content: center;
     height: 80vh;
 }
-.content2 .cards{
+
+.content2 .cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 50px;
     align-items: start;
     justify-content: center;
@@ -171,29 +197,35 @@ img {
     gap: 250px;
 
 }
-.content2 .cards .card img{
+
+.content2 .cards .card img {
     width: 200px;
     height: 200px;
     margin-top: 35px;
 }
-.content2 .cards .card .descripción{
+
+.content2 .cards .card .descripción {
     width: 200px;
     height: 200px;
     margin-top: 35px;
 }
-.content2 .cards .card{
+
+.content2 .cards .card {
     position: relative;
     height: auto;
     width: 250px;
 }
-.content2 .cards .card .servicio{
+
+.content2 .cards .card .servicio {
     color: var(--colorFirst);
     font-size: 20px;
 }
-.content2 .cards .card .descripcion{
+
+.content2 .cards .card .descripcion {
     color: var(--colorSecond);
 }
-.content3{
+
+.content3 {
     background-color: var(--colorFifth);
     grid-template-columns: 1fr;
     margin: 8vw;
@@ -203,30 +235,92 @@ img {
     align-items: center;
     flex-direction: column;
 }
-.content3 p{
+
+.content3 p {
     margin: 0;
     font-size: 45px;
     text-align: center;
 }
-.content .listas{
+
+.content .listas {
     display: grid;
 
 }
-.content hr{
+
+.content hr {
     width: 40%;
     border-color: var(--colorFirst);
 }
 
-.content .listas .lista p{
+.content .listas .lista p {
     color: var(--colorSecond);
     font-size: 20px;
 }
-.content .listas .lista ul{
+
+.content .listas .lista ul {
     list-style: none;
 
 }
-.contact-icon i{
+
+.contact-icon i {
     color: var(--colorFirst);
 }
 
-
+.listas {
+    width: 100vw;
+    color: var(--colorSecond);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-left: 10%;
+}
+.lista ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.lista hr{
+    margin-left: 0;
+    width: 15%;
+    margin-bottom: 10px;
+}
+.lista ul li {
+    list-style: none; 
+    margin-left: 0;
+    padding: 0;
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body{
+        margin: 20px;
+    }
+    .content{
+        margin-top: 20px;
+        width: 80vh;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+    }
+    .content .textos a{
+      font-size: 80px;
+    }
+    .content .textos p{
+        display: flex;
+        justify-content: center;
+      }
+      .content .textos button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+      }
+    .content .imagen{
+        width: 100%;
+        height: 100%;
+    }
+}
